@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body> 
+    <header>
+        <section class="navigation-header">
+            <a href="https://www.designevo.com/" class="logo">
+                <img src="properties/logo.jpg" alt="LOGO" title="Logo by DesignEvo" class="img-logo">
+            </a>
+            <nav class="navigation">
+                <table class="navigation-table">
+                    <tr>
+                        <td><a href="#">Home</a></td>
+                        <td><a href="#">Our Package</a></td>
+                        <td><a href="#">Call Us</a></td>
+                    </tr>
+                </table>
+            </nav>
+        </section>
+        <div class="title-header">
+            <section class="title-section">
+                <h1>Buana Travel Agent</h1>
+                <h4>Let's Travel with Us</h4>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div class="review-part">
+            <section class="testimoni" id="testimonials">
+                <img src="properties/pexels-helena-jankovičová-kováčová-19078661.jpg" alt="Somewhere">
+                <img src="properties/pexels-andrei-tanase-1271619.jpg" alt="Somewhere">
+                <img src="properties/pexels-oleksandr-p-2166553.jpg" alt="Somewhere">
+                <p><em>"Explore unique places around the world with Buana Travel Agent. "</em></p>
+                <h5>- Dani Tronjol</h5>
+            </section>
+            <br>
+            <section class="promotion">
+                <h4 id="promotion-header">The Advantages We Provide</h4>
+                <ol>
+                    <li>Unforgettable Destinations: Explore breathtaking destinations, from exotic beaches to historic landmarks. Our curated travel packages offer a perfect blend of adventure and relaxation.</li>
+                    <li>Luxurious Accommodations: Enjoy a stay in handpicked, top-rated hotels that redefine comfort.</li>
+                    <li>Savings on Flights: Fly with ease and enjoy special discounts on airfare when you book with us. We prioritize your convenience and work to provide the best prices for your journey.</li>
+                </ol>
+            </section>
+        </div>
+        <div class="container-form">
+            <section class="message-header">
+                <h5>Contact Us</h5>
+                <p>Our Sales will contact you in 1x24</p>
+                <form id="contactForm">
+                    <label for="name-form">Your Name :</label>
+                    <input type="text" id="name-form" placeholder="First and Last Name" required><br>
+                    <label for="email-form">Email Address :</label>
+                    <input type="text" id="email-form" placeholder="abcd@gmail.com" required><br>
+                    <label for="combo-box">What are you interested in</label>
+                    <select id="combo-box" required>
+                        <option value="">Select an option</option>
+                        <option value="Bussines">Bussines</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Culinary">Culinary</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Travelling">Travelling</option>
+                    </select><br>
+                    <button type="button" class="primary-button" onclick="validateForm()">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <script src="JS/sripts.js"></script> 
+</body>
+</html>

@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font: Arial, sans-serif;
+    background-color: #e2eeee;
+}
+
+.navigation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+}
+
+.navigation-header a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.navigation-table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.navigation-table td {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.navigation-table a {
+    display: block;
+    color: black;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.img-logo {
+    border-radius: 50%;
+    max-width: 20%;
+}
+
+.title-header {
+    margin: 20px;
+    max-width: 100%;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.title-section h4 {
+    font-size: 20px;
+}
+
+.review-part {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 60%;
+    justify-content: space-between;
+    float: left;
+}
+
+section.testimoni {
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border: 2px solid #264653;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.promotion {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #264653;
+}
+
+#promotion-header {
+    text-align: center;
+}
+
+ol li {
+    line-height: 30px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.container-form {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 100px;
+    float: right;
+}
+
+.message-header {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 25px; 
+    padding: 20px; 
+    width: 300px;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    border: 2px solid #264653;
+}
+
+.message-header h5 {
+    font-size: 20px;
+    line-height: 5px;
+}
+
+.message-header p {
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#name-form, #email-form, #combo-box, .primary-button {
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .title-header,
+    .review-part,
+    .promotion,
+    .container-form {
+        max-width: 100%;
+    }
+
+    .navigation-header {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Make height auto to expand as needed */
+        padding-bottom: 10px; /* Add some space at the bottom of navigation-header */
+    }
+
+    .logo {
+        margin-right: 0; /* Remove right margin on mobile */
+    }
+
+    .img-logo {
+        align-self: center;
+        max-width: 100%; /* Adjust the logo size for mobile */
+        margin: 10px; /* Add some space above and below the logo */
+    }
+
+    .navigation-table {
+        margin-top: 10px; /* Add space above the navigation table on mobile */
+    }
+
+    .navigation-table td {
+        display: block; /* Display table cells as blocks on mobile */
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 5px; /* Add some space between navigation links on mobile */
+    }
+}
